@@ -4,27 +4,37 @@
 <head>
     <style>
         .centered-div {
-            width: 1000px; /* Adjust width as needed */
+            width: 700px; /* Adjust width as needed */
             height: 200px; /* Adjust height as needed */
             background-color: white;
-            text-align: center;
+            text-align: left;
             padding: 20px;
             border-radius: 10px;
         }
 
         .progress-bar {
-            width: 100%;
+            width: 41%;
             height: 23px;
             background-color: black;
-            margin: 20px auto;
+            margin-top: 20px;
+            margin: left 0;
             border-radius: 10px;
             overflow: hidden;
         }
 
         .progress {
-            width: 45%; /* Adjust progress as needed */
+            width: 41%; /* Adjust progress as needed */
             height: 100%;
             background-color: #10bf16;
+        }
+        ul {
+            list-style-type: none; /* Remove default list styles */
+            padding: 0; /* Remove default padding */
+        }
+
+        li {
+            font-size: 10px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height as needed */
         }
     </style>
     <meta charset="utf-8">
@@ -105,13 +115,23 @@
 
 
     <div class="centered-div">
-        <h1>Your Shipment is on the way!</h1>
-        <h5>Destination: 25536 Ridgewell Dallas, TX</h5>
+        <strong>
+            <h6>Your Shipment is on the way!<h6>
+        </strong>
+
+        <p>Destination:<br> Paris, France</p>
+
         <div class="progress-bar">
-            <div class="progress" style="color: #10bf16;"></div>
+            <div class="progress" style="color: black; text-align: center; line-height: 20px; display: flex; justify-content: center;">41%</div>
         </div>
-        <p>Departed Carlifornia: 10:48am </p>
+        <br>
+        <ul>
+        <li>2/12/2024 - 05:00pm Departed Raleigh, North Carolina</li>
+        <li>2/12/2024 - 03:25pm Arrived Raleigh, North Carolina</li>
+        <li>2/12/2024 - 10:48am Departed Ridgewell Dallas TX</li>
+        </ul>
     </div>
+
 <br>
 <br>
 <br>
